@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | SNKRS.state</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Line Awesome -->
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url(Resources/Category-BG.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .account-container-wrapper .account-container .navbar .container img {
+            padding-left: 35%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            width: 130px;
+        }
+
+        .message {
+            display: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            z-index: 1000;
+        }
+
+        .account-container-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 40px;
+            margin-top: 10px; /* Adjusted margin to create space between header and form */
+        }
+
+        .account-container {
+            background-color: rgba(255, 255, 255, 0.28);
+            backdrop-filter: blur(10px);
+            padding: 60px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .account-container h2 {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #222222;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #222222;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #011326;
+        }
+
+        .form-group button {
+            width: 60%;
+            margin-left: 22%;
+            padding: 12px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(to bottom right, #ff0606, #bc0029);
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: 0.7s ease;
+        }
+
+        .form-group button:hover {
+            background: linear-gradient(to bottom right, #f31616, #810816);
+        }
+
+        .form-group a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #08087b;
+            text-decoration: none;
+        }
+
+        .form-group a:hover {
+            text-decoration: underline;             
+        }
+        .navbar .logo {
+             font-size: 28px;
+             font-weight: 600;
+             color: #333;
+             text-decoration: none;
+             transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+        .navbar .logo:hover {
+            color: #db1b09; /* Change text color on hover */
+            text-decoration: underline; /* Add underline on hover */
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        
+    </header>
+
+    <div class="message" id="success-message">Account Created Successfully!</div>
+
+    <div class="account-container-wrapper">
+        <div class="account-container">
+            <nav class="navbar">
+                <div class="container">
+                    <a href="index.html" class="logo"><img src="Resources/SNKRS-logo.png"></a>
+                </div>
+            </nav>
+            <h2>Create Your Account</h2>
+            <form id="account-form" action="create_account.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="form-group">
+                    <a href="login.html">Already have an account? Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('account-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Simulate a successful account creation process
+            document.getElementById('success-message').style.display = 'block';
+
+            // Redirect to another page or simulate server response
+            setTimeout(function() {
+                window.location.href = 'index.html'; // Redirect to home page or another page
+            }, 2000); // Show message for 2 seconds before redirecting
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpman MVP | SNKRS.state</title>
+
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+       <!-- Line Awesome -->
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+    
+    <link rel="stylesheet" href="jordan-shoes.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="Resources/SNKRS-logo.png"></a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="#"><i class="fas fa-user"></i> Account</a>
+                    <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---------- Single Product Details ---------->
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col">
+                <img src="Resources/JORDAN+MVP.png" alt="Air Jordan 4 RM" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="Resources/JORDAN+MVP (1).png" width="100%" id="SmallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Resources/JORDAN+MVP (2).png" width="100%" id="SmallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Resources/JORDAN+MVP (3).png" width="100%" id="SmallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Resources/JORDAN+MVP.jfif" width="100%" id="SmallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Resources/JORDAN+MVP (4).png" width="100%" id="SmallImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <p>Home | Jordan Collection</p>
+                <h1>Jumpman MVP</h1>
+                <h4>₹15,295.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>UK 6</option>
+                    <option>UK 6.5</option>
+                    <option>UK 7</option>
+                    <option>UK 7.5</option>
+                    <option>UK 8</option>
+                    <option>UK 8.5</option>
+                    <option>UK 9</option>
+                    <option>UK 9.5</option>
+                    <option>UK 10</option>
+                    <option>UK 10.5</option>
+                    <option>UK 11</option>
+                    <option>UK 11.5</option>
+                    <option>UK 12</option>
+                </select>
+                <input type="number" value="1">
+                <p><a href="cart.html" class="btn">Add to Cart</a>
+                    <h3>Product Details <i class="fa fa-info-circle"></i></h3></p>
+                <p>Never mess with a classic. Keep heritage on your feet with a white-on-white look that will never go out of style.
+                </p>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SNKRS.state. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!---------- js for Product Gallery ---------->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+
+        SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+        SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+        SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+        SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+        SmallImg[4].onclick = function()
+            {
+                ProductImg.src = SmallImg[4].src;
+            }
+        SmallImg[5].onclick = function()
+            {
+                ProductImg.src = SmallImg[5].src;
+            }
+
+</script>
+
+</body>
+</html>
+

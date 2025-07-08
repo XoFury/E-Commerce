@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Collection</title>
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+       <!-- Line Awesome -->
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+    
+    <link rel="stylesheet" href="nike-collections.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="Resources/SNKRS-logo.png"></a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-links">
+                    <a href="#"><i class="fas fa-user"></i> Account</a>
+                    <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="article-content">
+
+        <!---------- Sidebar ---------->
+
+        <div class="sidebar">
+            <h2>Filters</h2>
+            <div class="filter-option">
+                <h3>Sort By</h3>
+                <select>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="popularity">Popularity</option>
+                </select>
+            </div>
+            <div class="filter-option">
+                <h3>Price Range</h3>
+                <input type="range" min="500" max="10000" step="100" value="5000">
+            </div>
+            <div class="filter-option">
+                <h3>Category</h3>
+                <ul>
+                    <li><input type="checkbox">Lifestyle</li>
+                    <li><input type="checkbox">Running</li>
+                    <li><input type="checkbox">Training & Gym</li>
+                    <li><input type="checkbox">Basketball</li>
+                    <li><input type="checkbox"> Men</li>
+                    <li><input type="checkbox"> Women</li>
+                    <li><input type="checkbox"> Kids</li>
+                </ul>
+            </div>
+        </div>
+
+        <!---------- Dress Gallery ---------->
+
+        <div class="dress-gallery">
+            <div class="dress-item">
+                <a href="air-180.html">
+                    <img src="Resources/air-180-black-and-dusty-cactus-fj9259-001-release-date.jpg" alt="Air Jordan 4 RM">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>Air 180</h3>
+                <p>₹13,995.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="air-pegasus-wave.html">
+                    <img src="Resources/air-pegasus-wave-black-and-metallic-silver-ib0612-001-release-date.jpg" alt="Women's Air Jordan 1 Low">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>Air Pegasus Wave</h3>
+                <p>₹14,995.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="clogposite.html">
+                    <img src="Resources/clogposite-chrome-and-black-fq8257-002-release-date.jpg" alt="Air Jordan 1 Mid SE">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>Clogposite</h3>
+                <p>₹12,795.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="air-terra-humara-sp.html">
+                    <img src="Resources/air-terra-humara-sp-black-and-anthracite-fq9084-001-release-date.jpg" alt="Jordan Stadium">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>Air Terra Humara SP</SPan></h3>
+                <p>₹12,795.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="air-pegasus-2005.html">
+                    <img src="Resources/air-pegasus-2005-white-and-black-fv6383-100-release-date.jpg" alt="Air Jordan 1 Mid">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>Air Pegasus 2005</h3>
+                <p>₹13,995.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="air-max-1-JQ.html">
+                    <img src="Resources/air-max-1-x-jacquemus-university-red-and-metallic-silver-hm6690-600-release-date.jpg" alt="Air Jordan 1 Zoom CMFT 2">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>Air Max 1 x Jacquemus</h3>
+                <p>₹15,995.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="nocta-air-zm-drive.html">
+                    <img src="Resources/nocta-air-zoom-drive-black-dx5854-001-release-date.jpg" alt="Women's Air Jordan 1 Mid">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>NOCTA Air Zoom Drive</h3>
+                <p>₹15,295.00</p>
+            </div>
+            <div class="dress-item">
+                <a href="ispa-link-axis.html">
+                    <img src="Resources/ispa-link-axis-black-and-anthracite-fz3507-002-release-date.jpg" alt="Jumpman MVP">
+                    <div class="hover-text">Explore</div>
+                </a>
+                <h3>ISPA Link Axis</h3>
+                <p>₹25,457.00</p>
+            </div>
+        </div>
+    </div>
+<br>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SNKRS.state. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

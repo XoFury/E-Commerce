@@ -1,0 +1,117 @@
+body{
+    background-image: url(Resources/Backdrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(35px);
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: auto;
+}
+
+.col {
+    padding: 20px;
+    margin: 5px;
+    flex-basis: 38%;
+    min-width: 200px;
+}
+
+.col h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.col h3 {
+    line-height: 60px;
+    align-self: center;
+}
+
+.col p {
+    font-size: 13px;
+}
+
+.small-container .col img {
+    padding: 0;
+    width: 600px;
+    height: 600px;
+    border: 1px solid #808080;
+    border-radius: 15px;
+}
+
+.small-container select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #ef1838;
+    border-radius: 8px;
+}
+
+.small-container input {
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 2px solid #ef1838;
+    border-radius: 8px;
+}
+
+select:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.small-container .fa {
+    padding-left: 5px;
+    font-size: 25px;
+    color: #ef1838;
+}
+
+.col .btn {
+    height: 60px;
+    width: 170px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    background: linear-gradient(to bottom right, #ff2600, #dd0030);
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    padding: 5px;
+    flex-basis: 40%;
+    cursor: pointer;
+}
+
+.small-img-col img {
+    max-height: 140px;
+    max-width: 110px;
+    border: 1px solid #808080;
+}
